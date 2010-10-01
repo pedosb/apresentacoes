@@ -42,15 +42,15 @@
    \usepackage[T1]{fontenc}
 
 \title[Reconhecimento de Voz para Português Brasileiro] % (optional, use only with long paper titles)
-{Desenvolvimento de Aplicações Utilizando Reconhecimento de Voz para Português Brasileiro}
+{Desenvolvimento de Aplicativos Utilizando Reconhecimento de Voz para Português Brasileiro}
 
 \author%[]  (optional, for multiple authors)
-{Pedro~Batista\inst{1}}
+{Pedro~Batista}%\inst{1}}
 \institute % (optional)
 {
    Laboratório de Processamento de Sinais \\
       Universidade Federal do Pará \\
-      http://www.laps.ufpa.br\inst{1}
+      http://www.laps.ufpa.br%\inst{1}
 }
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
@@ -64,13 +64,13 @@
 %\logo{\pgfuseimage{university-logo}}
 % Delete this, if you do not want the table of contents to pop up at
 % the beginning of each subsection:
-\AtBeginSection[]
-{
-   \begin{frame}<beamer>{Sumário}
-   \footnotesize
-      \tableofcontents[currentsection]
-      \end{frame}
-}
+%\AtBeginSection[]
+%{
+%  \begin{frame}<beamer>{Sumário}
+%  \footnotesize
+%     \tableofcontents[currentsection]
+%     \end{frame}
+%}
 
 
 % If you wish to uncover everything in a step-wise fashion, uncomment
@@ -116,15 +116,6 @@
       \end{itemize}
    }
 
-\subsection{Motivação}
-\begin{frame}
-   \frametitle{Por que Reconhecimento Automático de Voz?}
-   \begin{center}
-      \includegraphics[height=4cm]{no_translator}\\
-      \includegraphics[height=3.5cm]{translator}<2->
-   \end{center}
-\end{frame}
-
 \begin{frame}
    \frametitle{Por que Reconhecimento Automático de Voz?}
    \vspace{0.5cm}
@@ -139,36 +130,35 @@
 \section{A LaPSAPI}
 \subsection{O que é a LaPSAPI?}
 \frame{
-   \frametitle{O Decodificador Julius}
+   \frametitle{O Decodificador Julius e a LaPSAPI}
    \begin{itemize}
-      \item Decodificador Automático de Voz Continua Open-Source para Grandes Vocabulários.
+      \item Um importante integrante do RAV é o decodificador. Ele utiliza
+	 os modelos acústicos e de linguagem para realizar a conversão dos
+	 sinais de fala para texto.
+      \begin{itemize}
+	 \item Modos de operação:
+	 \begin{itemize}
+	    \item Comando e controle.
+	    \item Ditado (ou fala espontânea).
+	 \end{itemize}
+
+	 \item Dependência de locutor.
+	 \item Principais métricas de avaliação: precisão e velocidade.
+      \end{itemize}
 
       \item É quem faz o reconhecimento propriamente dito.
 
       \item Para funcionar necessita de modelos acústico e de linguagem.
-   \end{itemize}
-}
 
-\begin{frame}
-   \frametitle{O Que é a LaPSAPI?}
-   \begin{itemize}
-      \item É uma API baseada no Julius.
-      
-      \pause
-      \item O Julius tem sua própria API.
-      \begin{itemize}
-	 \item Assume um conhecimento técnico em RAV.
-      \end{itemize}
-
-      \pause
       \item LaPSAPI:
       \begin{itemize}
 	 \item API de fácil uso.
 	 \item Voltada para o desenvolvimento de
 	    aplicações.
+
       \end{itemize}
    \end{itemize}
-\end{frame}
+}
 
 \subsection{O Uso da LaPSAPI}
 \begin{frame}
@@ -214,26 +204,6 @@
       \end{itemize}
 
       \item Modelos não-probabilisticos: gramáticas livre de contexto.
-   \end{itemize}
-}
-
-\frame{
-   \frametitle{O Decodificador}
-   \begin{itemize}
-      \item Um importante integrante do RAV é o decodificador. Ele utiliza
-	 os modelos acústicos e de linguagem para realizar a conversão dos
-	 sinais de fala para texto.
-      \begin{itemize}
-	 \item Modos de operação:
-	 \begin{itemize}
-	    \item Comando e controle.
-	    \item Ditado (ou fala espontânea).
-	 \end{itemize}
-
-	 \item Dependência de locutor.
-	 \item Adaptação de locutor.
-	 \item Principais métricas de avaliação: precisão e velocidade.
-      \end{itemize}
    \end{itemize}
 }
 
@@ -300,53 +270,12 @@
    \end{itemize}
 \end{frame}
 
-\begin{frame}
-   \frametitle{LaPSStory e LaPSBenchmark Corpora de Áudio}
-   \begin{itemize}
-      \item Os corpus LaPSStory e Spoltech foram usados para treinar os
-	 modelos.
-      \item O corpus LaPSBenchmark foi construído para ser um corpus de
-	 referencia para comparação de sistemas RAV.\\[10pt]
-   \end{itemize}
-   {\footnotesize
-   \centering
-   \begin{tabular}{ c  p{2.5cm}  c  c  c }
-      \toprule
-      \textbf{Name} & \textbf{Baseado em} & \textbf{Ambiente} & \textbf{Locutores} & \textbf{Tamanho} \\\midrule
-      LaPSStory     & Livro Falado        & Studio				  & 6 & 14 horas \\\midrule
-      LaPSBenchmark & \scriptsize{Gravações usando microfones comuns} & Escritório & 35 & 54 min \\
-      \bottomrule
-   \end{tabular}}
-\end{frame}
-
-\begin{frame}
-   \frametitle{Adaptação de Locutor do Modelo Acústico}
-   \begin{itemize}
-      \item Para melhorar o reconhecimento para um locutor
-	 nós podemos adaptar o modelo acústico.
-   \end{itemize}
-\end{frame}
-
 \subsection{O Sistema}
 \frame{
    \frametitle{Processo de Reconhecimento}
    \begin{center}
       \includegraphics[height=1.4in]{diagrama_reconhecimento}
    \end{center}
-}
-
-\frame{
-   \frametitle{É Difícil Construir um Sistema RAV?}
-   \begin{itemize}
-      \item Dados para treino dos modelos acústico e de linguagem.
-      \begin{itemize}
-	 \item Dificuldade na segmentação da fala.
-      \end{itemize}
-
-      \item Variação no ritmo, timbre e intensidade da fala.
-      \item Diferenças de sotaque.
-      \item Ruído ambiente.
-   \end{itemize}
 }
 
 \section{Desempenho}
@@ -415,8 +344,47 @@
    \end{itemize}
 \end{frame}
 
-\section{SpeechOO}
-\subsection{Arquitetura}
+
+\section{Considerações Finais}
+\subsection{Aplicativos Desenvolvidos}
+\frame{
+   \frametitle{CorujaNavigator: Um Navegador Web não visual e hands-free}
+   \begin{itemize}
+      \item Navegação web exclusivamente através de texto.
+      \begin{itemize}
+	 \item O usuário diz da página atual que quer acessar.
+	 \item O CorujaNavigator acessa e sintetiza o texto da nova página.
+      \end{itemize}
+      \item Atualmente necessita de métodos para cada domínio a ser acessado.
+      \begin{itemize}
+	 \item Estamos trabalhando para que o acesso seja livre de domínio.
+      \end{itemize}
+   \end{itemize}
+}
+
+\frame{
+   \frametitle{SpeechOO: Ditado no OpenOffice.org}
+   \begin{itemize}
+      \item Faz uso do pacote Coruja para permitir ditado
+	 para o aplicativo Writer do OpenOffice.org.
+      \begin{itemize}
+	 \item Permite apenas o ditado.
+      \end{itemize}
+
+      \pause
+      \item Trabalhos Futuros:
+      \begin{itemize}
+	 \item Possibilitar comandos, como: Negrito, tamanho da fonte, etc.
+	 \item Passar a sentença pelo corretor gramatical para corrigir
+	    possíveis erros.
+	 \item Módulo para fazer recase da sentença reconhecida.
+	 \item Permitir a correção de uma palavra que foi reconhecida errado.
+	 \item Acrescentar módulo de adaptação de locutor (aguardando módulo do
+	       Coruja).
+      \end{itemize}
+   \end{itemize}
+}
+
 \frame{
    \frametitle{Arquitetura do SpeechOO}
    \begin{center}
@@ -424,7 +392,7 @@
    \end{center}
 }
 
-\section{Considerações Finais}
+
 \subsection{Conclusão}
 \begin{frame}
    \frametitle{Recursos Produzidos}
@@ -449,85 +417,16 @@
    \end{itemize}
 }
 
-\subsection{Aplicativos Desenvolvidos}
-
-\frame{
-   \frametitle{CorujaNavigator: Um Navegador Web não visual e hands-free}
-   \begin{itemize}
-      \item Navegação web exclusivamente através de texto.
-      \begin{itemize}
-	 \item O usuário diz da página atual que quer acessar.
-	 \item O CorujaNavigator acessa e sintetiza o texto da nova página.
-      \end{itemize}
-      \item Atualmente necessita de métodos para cada domínio a ser acessado.
-      \begin{itemize}
-	 \item Estamos trabalhando para que o acesso seja livre de domínio.
-      \end{itemize}
-   \end{itemize}
-}
-
-\subsection{Trabalhos Futuros}
-
-\frame{
-   \frametitle{Trabalhos Futuros - SpeechOO}
-   \begin{center}
-   \includegraphics[height=2in]{baixo_nivel_confianca}
-   \end{center}
-}
-
-\frame{
-   \frametitle{Trabalhos Futuros - SpeechOO}
-   \begin{center}
-   \includegraphics[height=2in]{writer_com_opcoes}
-   \end{center}
-}
-
-\frame{
-   \frametitle{Trabalhos Futuros - SpeechOO}
-   \begin{itemize}
-      \item Possibilitar comandos, como: Negrito, tamanho da fonte, etc.
-      \item Passar a sentença pelo corretor gramatical para corrigir
-	 possíveis erros.
-      \item Módulo para fazer recase da sentença reconhecida.
-      \item Permitir a correção de uma palavra que foi reconhecida errado.
-      \item Acrescentar módulo de adaptação de locutor (aguardando módulo do
-	    Coruja).
-      \end{itemize}
-}
-
 \begin{frame}
    \large
    \frametitle{Obrigado! Perguntas?}
    \begin{figure}
-      \includegraphics[height=0.5in]{logo_broffice}\\
-      \includegraphics[height=1in]{../logo_falabrasil/logo}
-      \includegraphics[height=0.58in]{banner_ccsl_usp}\\
-      \includegraphics[height=1in]{logo_ufpa}
-      \includegraphics[height=0.5in]{logo_laps}
-      \includegraphics[height=1.3in]{logo_cnpq}
-      \includegraphics[height=0.8in]{logo_fapespa}
+      \includegraphics[height=1in]{logo}\\
+      \includegraphics[height=0.8in]{logo_ufpa}
+      \includegraphics[height=0.4in]{logo_laps}\\
+      \includegraphics[height=1.1in]{logo_cnpq}
+      \includegraphics[height=0.7in]{logo_fapespa}
    \end{figure}
 \end{frame}
 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
