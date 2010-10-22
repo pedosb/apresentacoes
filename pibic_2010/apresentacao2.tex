@@ -42,15 +42,17 @@
    \usepackage[T1]{fontenc}
 
 \title[Reconhecimento de Voz para Português Brasileiro] % (optional, use only with long paper titles)
-{Desenvolvimento de Aplicativos Utilizando Reconhecimento de Voz para Português Brasileiro}
+{Implementação de um Decodificador para um Sistema de Reconhecimento de Voz do Português Brasileiro}
 
 \author%[]  (optional, for multiple authors)
-{Pedro~Batista}%\inst{1}}
+{Pedro~Batista \and Aldebaro Klautau}%\inst{1}}
 \institute % (optional)
 {
+	    Grupo FalaBrasil\\
    Laboratório de Processamento de Sinais \\
       Universidade Federal do Pará \\
-      http://www.laps.ufpa.br%\inst{1}
+      http://www.laps.ufpa.br/falabrasil\\%\inst{1}
+\includegraphics[height=0.7in]{logo_cnpq}
 }
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
@@ -60,8 +62,8 @@
 
 \subject{Reconhecimento Automático de Voz}
 
-\pgfdeclareimage[height=0.5cm]{university-logo}{logo_cnpq}
-%\logo{\pgfuseimage{university-logo}}
+\pgfdeclareimage[height=0.5cm]{university-logo}{figures/logo_laps}
+\logo{\pgfuseimage{university-logo}}
 % Delete this, if you do not want the table of contents to pop up at
 % the beginning of each subsection:
 %\AtBeginSection[]
@@ -235,10 +237,10 @@
       \item O corpus de texto é simplesmente um conjunto de sentenças.
       {\footnotesize
 	 \begin{verbatim}
-	 <s> a cidade não vai se livrar do minhocão </s>
-	    <s> segundo a escola os dois casos não têm relação </s>
-	    <s> meu filho estava a poucos metros de casa </s>
-	    ...
+<s> a cidade não vai se livrar do minhocão </s>
+<s> segundo a escola os dois casos não têm relação </s>
+<s> meu filho estava a poucos metros de casa </s>
+...
 	    \end{verbatim}
       }
       \pause
@@ -393,28 +395,33 @@
 }
 
 
-\subsection{Conclusão}
-\begin{frame}
-   \frametitle{Recursos Produzidos}
-   \begin{itemize}
-      \item Coruja: Um sistema de reconhecimento de voz em Português
-	 Brasileiro.
-      \item Todos recursos aqui produzidos estão disponíveis
-	 em \url{http://www.laps.ufpa.br/falabrasil}
-      \item Já existem projetos que fazem uso do Coruja como por
-	 exemplo o Coruja-Navigator e SpeechOO.
-   \end{itemize}
-\end{frame}
-
+\subsection{Trabalhos Públicados e Palestras}
 \frame{
-   \frametitle{Ajude no Desenvolvimento}
-   \begin{itemize}
-   \item Você pode ajudar no desenvolvimento deste projeto usando e
-      testando nossos recursos.
-   \item Ajude-nos a gerar recursos para construir um melhor sistema
-      RAV.\\
-   \url{http://www.voxforge.org}
-   \end{itemize}
+\begin{itemize}
+{\footnotesize
+\item Patrick Silva, Pedro Batista, Nelson Neto, Aldebaro Klautau. \textit{An Open-Source
+Speech Recognizer for Brazilian Portuguese with a Windows Programming
+Interface.}
+Em: The International Conference on Computational Processing of the Portuguese Language -
+PROPOR 2010, Porto Alegre.\\
+
+\item Pedro Batista, Patrick Silva, Nelson Neto, Aldebaro Klautau.
+\textit{A non-Visual Web Browsing System using Speech Recognition for Brazilian Portuguese}
+Em: The International Conference on Computational Processing of the Portuguese Language -
+Demos Session PROPOR 2010, Porto Alegre.\\
+
+\item Pedro Batista, William Colem. \textit{"Veja mamãe,
+sem as mãos!" SpeechOO, uma extensão de ditado para o BrOffice.org}
+Em: Palestra no concorrido Fórum Internacional de Software Livre - FISL 11, Porto Alegre 2010.\\
+
+\item O \textit{software} Coruja Navigator recebeu o prêmio: \textit{Melhor Produto
+de Software do Pará na Categoria Acadêmico}. Premiação concedida pelo Laboratório de Tecnologia
+de Software da UFPA no IX Simpósio Brasileiro de Qualidade de Software.\\
+
+\item Pedro Batista. \textit{Desenvolvimento de Aplicativos Utilizando Reconhecimento Automático de Voz
+Para Português Brasileiro} Em: Palestra na Semana Acadêmica do CBCC.\\
+}
+\end{itemize}
 }
 
 \begin{frame}
