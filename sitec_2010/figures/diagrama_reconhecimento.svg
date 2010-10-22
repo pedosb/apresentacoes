@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="32cm" height="12cm" viewBox="3 20 623 238" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <image x="5" y="103" width="107" height="65" xlink:href="file:///C:/Users/Pedro/matinta/LaPS/fisl2010/figures/sound.png"/>
+  <g>
+    <rect style="fill: #ffffff" x="318.725" y="119" width="110.55" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="318.725" y="119" width="110.55" height="38"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="374" y="141.9">
+      <tspan x="374" y="141.9">Decodificador</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="335.804,202 435.851,202 416.196,256 316.149,256 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="335.804,202 435.851,202 416.196,256 316.149,256 "/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="376" y="224.9">
+      <tspan x="376" y="224.9">Modelo da</tspan>
+      <tspan x="376" y="240.9">Língua</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="152.344" y="117" width="103.313" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="152.344" y="117" width="103.313" height="40"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="162.675" y1="117" x2="162.675" y2="157"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="245.325" y1="117" x2="245.325" y2="157"/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="204" y="133">
+      <tspan x="204" y="133">Extração de</tspan>
+      <tspan x="204" y="149">Parâmetros</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="113.995" y1="136.072" x2="141.611" y2="136.357"/>
+    <polygon style="fill: #000000" points="149.111,136.434 139.06,141.331 141.611,136.357 139.163,131.331 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="149.111,136.434 139.06,141.331 141.611,136.357 139.163,131.331 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="256.648" y1="137.31" x2="308.068" y2="137.612"/>
+    <polygon style="fill: #000000" points="315.568,137.656 305.538,142.597 308.068,137.612 305.597,132.598 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="315.568,137.656 305.538,142.597 308.068,137.612 305.597,132.598 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="375.385" y1="200.996" x2="374.654" y2="167.74"/>
+    <polygon style="fill: #000000" points="374.489,160.242 379.707,170.129 374.654,167.74 369.71,170.349 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="374.489,160.242 379.707,170.129 374.654,167.74 369.71,170.349 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="341.004,21 428.651,21 408.996,75 321.349,75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="341.004,21 428.651,21 408.996,75 321.349,75 "/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="375" y="43.9">
+      <tspan x="375" y="43.9">Modelo</tspan>
+      <tspan x="375" y="59.9">Acústico</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="163.729,21 281.926,21 262.271,75 144.074,75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="163.729,21 281.926,21 262.271,75 144.074,75 "/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="213" y="43.9">
+      <tspan x="213" y="43.9">Dicionário de</tspan>
+      <tspan x="213" y="59.9">Pronúncias</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="272.732" y1="48" x2="320.799" y2="48"/>
+    <polygon style="fill: #000000" points="328.299,48 318.299,53 320.799,48 318.299,43 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="328.299,48 318.299,53 320.799,48 318.299,43 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="374.689" y1="76.0042" x2="374.33" y2="108.258"/>
+    <polygon style="fill: #000000" points="374.247,115.758 369.359,105.703 374.33,108.258 379.358,105.814 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="374.247,115.758 369.359,105.703 374.33,108.258 379.358,105.814 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="476.643,114 625.916,114 611.357,154 462.084,154 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="476.643,114 625.916,114 611.357,154 462.084,154 "/>
+    <text style="fill: #000000;text-anchor:middle;font-size:12.7998;font-family:sanserif;font-style:normal;font-weight:normal" x="544" y="137.9">
+      <tspan x="544" y="137.9">Frase Reconhecida</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="430.196" y1="136.678" x2="458.346" y2="136.015"/>
+    <polygon style="fill: #000000" points="465.844,135.839 455.964,141.073 458.346,136.015 455.729,131.076 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="465.844,135.839 455.964,141.073 458.346,136.015 455.729,131.076 "/>
+  </g>
+</svg>
