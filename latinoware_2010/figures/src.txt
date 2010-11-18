@@ -1,0 +1,11 @@
+voice-controlled_car -> http://admintell.napco.com/ee/images/uploads/gadgetell/microsoft-hyundai_thumb.jpg
+
+voice-controlled_car -> http://blog.makezine.com/img413_480.jpg
+
+phone_cartoon -> http://www.yesyes.co.nz/images/phone_cartoon.gif 
+
+600px-Symbol_OK.svg - > http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Symbol_OK.svg/600px-Symbol_OK.svg.png
+
+voice-controlled_phone -> http://images.trustedreviews.com/images/article/inline/12346-img3163.jpg
+
+speech_controlled_robotic-arm -> http://www.imagesco.com/robotics/owi-535.html
